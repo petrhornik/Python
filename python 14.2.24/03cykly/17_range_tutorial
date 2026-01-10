@@ -1,0 +1,32 @@
+Pomocí range() budeme zejména ve for-cyklech generovat různé posloupnosti hodnot.
+Tato funkce může mít různý počet parametrů a podle toho se bude generovat i výsledná posloupnost.
+Všechny parametry musí být celočíselné.
+
+funkce range ()
+
+range (stop)
+range (start, stop)
+range (start, stop, krok)
+
+parametry:
+
+start = první prvek vygenerované posloupnosti (pokud chybí, předpokládá se 0)
+stop = hodnota, na níž se již generování další hodnoty posloupnosti zastaví - tato hodnota již v posloupnosti nebude
+krok = hodnota, o kterou se zvýší (resp. sníží záporný krok) každý následující prvek posloupnosti, pokud tento parametr
+        chybí, předpokládá se 1
+
+Většinou platí, že do parametru dtop nastavíme o 1 větší hodnotu,
+než potřebujeme poslední hodnotu vygenerované posloupnosti.
+
+Příklady:
+    příkaz                  výstup
+
+range (10)           |   0, 1, 2, 3, 4, 5, 6, 7, 8, 9
+range (0, 10)        |   0,1,2,3,4,5,6,7,8,9
+range (0, 10, 1)     |   0,1,2,3,4,5,6,7,8,9
+range (3, 10)        |   3,4,5,6,7,8,9
+range (3, 10, 2)     |   3,5,7,9
+range (10, 100, 10)  |   10,20,30,40,50,60,70,90
+range (10, 1, -1)    |    10,9,8,7,6,5,4,3,2
+range (10, 1)        |    prázdná posloupnost
+range (1, 1)         |    prázdná posloupnost
